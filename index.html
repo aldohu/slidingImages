@@ -8,45 +8,69 @@
 		/>
 		<link
 			rel="stylesheet"
-			href="path/to/font-awesome/css/font-awesome.min.css"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+			integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+			crossorigin="anonymous"
 		/>
-		<link
-			rel="stylesheet"
-			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-		/>
-
 		<link
 			rel="stylesheet"
 			href="app.css"
 		/>
+		<title>Background Slider</title>
+	</head>
+	<body>
+		<div class="slider-container">
+			<div
+				class="slide active"
+				style="
+					background-image: url('https://images.unsplash.com/photo-1666919643134-d97687c1826c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwxfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60');
+				"
+			></div>
+			<div
+				class="slide"
+				style="
+					background-image: url('https://images.unsplash.com/photo-1687789903431-54cdeb56bb43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwyfHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60');
+				"
+			></div>
+
+			<div
+				class="slide"
+				style="
+					background-image: url('https://images.unsplash.com/photo-1686682538445-ee26c9db6ead?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw4fHx8ZW58MHx8fHx8&auto=format&fit=crop&w=600&q=60');
+				"
+			></div>
+
+			<div
+				class="slide"
+				style="
+					background-image: url('https://images.unsplash.com/photo-1686922187671-510b88dfc927?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwxMnx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=60');
+				"
+			></div>
+
+			<div
+				class="slide"
+				style="
+					background-image: url('https://source.unsplash.com/random/800x600/?nature');
+				"
+			></div>
+
+			<button
+				class="arrow left-arrow"
+				id="left"
+			>
+				<i class="fas fa-arrow-left"></i>
+			</button>
+
+			<button
+				class="arrow right-arrow"
+				id="right"
+			>
+				<i class="fas fa-arrow-right"></i>
+			</button>
+		</div>
 		<script
 			src="app.js"
 			defer
 		></script>
-		<title>Background slider</title>
-	</head>
-	<body>
-		<div class="image-container">
-			<div class="image">
-				<img
-					src="https://source.unsplash.com/random/800x600/?nature"
-					alt="Image 1"
-				/>
-			</div>
-			<div class="image">
-				<img
-					src="https://source.unsplash.com/random/800x600/?travel"
-					alt="Image 2"
-				/>
-			</div>
-			<div class="image">
-				<img
-					src="https://source.unsplash.com/random/800x600/?architecture"
-					alt="Image 3"
-				/>
-			</div>
-			<button class="arrow-button"><i class="fas fa-arrow-left"></i></button>
-			<button class="arrow-button"><i class="fas fa-arrow-right"></i></button>
-		</div>
 	</body>
 </html>
